@@ -1,0 +1,139 @@
+
+
+    <!doctype html>
+
+<!-- This entire layout structure is taken from CS50s finance implementation https://finance.cs50.net/login -->
+
+<html lang="en">
+
+    <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89966424-1"></script>
+
+
+        <!-- This is taken from Bootstrap https://getbootstrap.com/docs/4.4/getting-started/introduction/-->
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- own additional style sheet -->
+        <link href="/static/css/styles.css" rel="stylesheet">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168103075-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-168103075-1', {'anonymize_ip': true });
+        </script>
+
+
+        <!-- Disallow crawlers to index this website -->
+        <meta name="robots" content="noindex">
+
+        <title>Contact</title>
+        <link rel="icon" href="/static/img/home.png">
+
+        <!-- mobile first bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light border sticky-top">
+            <a class="navbar-brand" id="about-navbarbrand" href="/">Mukesh Kumar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://medium.com/@kumarmukeshofficials">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/contact">Contact Me</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2">
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://github.com/kumarmukeshofficials">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://www.kaggle.com/kumarmukeshofficials">Kaggle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://www.linkedin.com/in/kumarmukeshofficials/">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="container">
+        <h2 class="text-center my-3">Contact me for any enquiry</h2>
+        <form action="/contact" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Phone</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your Number">
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Explain Your
+                        Concern</label>
+                <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Success</button>
+        </form>
+    </div>
+
+    <footer class="small text-center text-muted">
+            <a href="#" class="text-dark">Legal Notice</a> |
+            <a href="#" class="text-dark">Privacy</a>
+            <p class="copyright">Copyright &copy; 2021 | Mukesh Kumar</p>
+        </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

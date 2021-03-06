@@ -1,0 +1,251 @@
+
+
+    <!doctype html>
+
+<!-- This entire layout structure is taken from CS50s finance implementation https://finance.cs50.net/login -->
+
+<html lang="en">
+
+    <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89966424-1"></script>
+
+
+        <!-- This is taken from Bootstrap https://getbootstrap.com/docs/4.4/getting-started/introduction/-->
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- own additional style sheet -->
+        <link href="/static/css/styles.css" rel="stylesheet">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168103075-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-168103075-1', {'anonymize_ip': true });
+        </script>
+
+
+        <!-- Disallow crawlers to index this website -->
+        <meta name="robots" content="noindex">
+
+        <title>Portfolio</title>
+        <link rel="icon" href="/static/img/home.png">
+
+        <!-- mobile first bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border sticky-top">
+            <a class="navbar-brand" id="about-navbarbrand" href="/">Mukesh Kumar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://medium.com/@kumarmukeshofficials">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about-nav-link" href="/contact">Contact Me</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2">
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://github.com/kumarmukeshofficials">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://www.kaggle.com/kumarmukeshofficials">Kaggle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" id="about-nav-link" href="https://www.linkedin.com/in/kumarmukeshofficials/">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container p-0">
+            <section class="title-color" id="portfolio-title">
+                <div class="title-container">
+                    <div class="row title-text">
+                        <div class="col-12 col-sm-9 col-md-7 col-lg-6 additional-margin">
+                            <div class="title-description">
+                                <p>Supervised machine learning, deep learning, times series analysis, exploratory data analysis or web development - my report on projects covers different topics and I am constantly working on new projects. One of my newest is this website, which I created from scratch using HTML, CSS and Python or Flask. I implement your content management system with a specially developed PostgreSQL database. I present all other projects below and link to the code, my blog posts and the hosted projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row title-text">
+                        <div class="col-auto additional-margin">
+                            <p>PROJECT PORTFOLIO</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+    <section class="home-content">
+        <div class="container p-0">
+
+
+
+            <div class="row portfolio-row justify-content-center">
+
+
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <a target="_blank" class="title-link" href="https://waffer-fault-detecion.herokuapp.com/"><h5>Wafer Fault Detection</h5></a>
+                                <p class="project-des">
+                                    An in-depth analysis and description of the functionality of three tree-based ensemble algorithms and the distinction between boosting and bagging.
+                                </p>
+                                <p class="skills">
+                                    <span class="bold">Skills:</span> Algorithms, Supervised ML Concepts, Tree-Based Ensemble Models
+                                </p>
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://waffer-fault-detecion.herokuapp.com/">
+                                    <img class="portfolio-img" src="/static/img/waffer.png">
+                                </a>
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col-12 text-center">
+                                    <a target="_blank" href="https://github.com/kumarmukeshofficials/Machine-Learning-Projects" class="button btn portfolio-btn rounded-0">Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <a target="_blank" class="title-link" href="https://harvestify-ml-project.herokuapp.com/"><h5>Harvestify Prediction</h5></a>
+                                <p class="project-des">
+                                    With the help of tree-based ensemble algorithms, I predict the which type of soil grow which crop, taking into account the look-ahead bias.
+                                </p>
+                                <p class="skills">
+                                    <span class="bold">Skills:</span> Python, EDA, Time Series Analysis, Supervised ML, Statistics, Data Visualization
+                                </p>
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://harvestify-ml-project.herokuapp.com/">
+                                    <img class="portfolio-img" src="/static/img/harvest.png">
+                                </a>
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col-12 text-center">
+                                    <a target="_blank" href="https://github.com/kumarmukeshofficials/Harvestify_ml" class="button btn portfolio-btn rounded-0">Code</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+            </div>
+
+            <div class="row portfolio-row justify-content-center">
+
+
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <a target="_blank" class="title-link" href="https://false-note-authentication.herokuapp.com/"><h5>Bank Note Prediction</h5></a>
+                                <p class="project-des">
+                                    Using AdaBoost, XGBoost, and a dataset from the kaggle .
+                                </p>
+                                <p class="skills">
+                                    <span class="bold">Skills:</span> Python, Supervised ML, Feature Engineering and Selection, Data Visualization
+                                </p>
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://false-note-authentication.herokuapp.com/">
+                                    <img class="portfolio-img" src="/static/img/banknote.png">
+                                </a>
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col-12 text-center">
+                                    <a target="_blank" href="https://github.com/kumarmukeshofficials/Bank-Note-Auth-Ml" class="button btn portfolio-btn rounded-0">Code</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <a target="_blank" class="title-link" href="https://ml-vehicle-prediction.herokuapp.com/"><h5>Car Price Prediction</h5></a>
+                                <p class="project-des">
+                                    For a dataset from Kaggle, I predict various type of old car price to sell.
+                                </p>
+                                <p class="skills">
+                                    <span class="bold">Skills:</span> Python, Algorithms, RandomForestClassification
+                                </p>
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://ml-vehicle-prediction.herokuapp.com/">
+                                    <img class="portfolio-img" src="/static/img/carprediction.png">
+                                </a>
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col-12 text-center">
+                                    <a target="_blank" href="https://github.com/kumarmukeshofficials/Car-Price-Prediction-Ml" class="button btn portfolio-btn rounded-0">Code</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+            </div>
+
+
+
+
+
+
+    </section>
+
+
+        </main>
+
+        <footer class="small text-center text-muted">
+            <a href="#" class="text-dark">Legal Notice</a> |
+            <a href="#" class="text-dark">Privacy</a>
+            <p class="copyright">Copyright &copy; 2021 | Mukesh Kumar</p>
+        </footer>
+
+    </body>
+
+</html>
